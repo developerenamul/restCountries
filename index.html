@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's tour the world</title>
+    <style>
+      #countriesContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .country {
+        border: 3px solid black;
+        margin: 5px;
+        padding: 10px;
+        font-size: 18px;
+      }
+      button {
+        cursor: pointer;
+        padding: 10px 15px;
+        font-size: 18px;
+      }
+      #countryDetails {
+        display: flex;
+        justify-content: center;
+      }
+      .card {
+        border: 3px solid black;
+        padding: 10px;
+      }
+
+      .card p {
+        font-size: 20px;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>let's go around the world</h2>
+    </header>
+    <main>
+      <div id="countryDetails"></div>
+      <section>
+        <div id="countriesContainer"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
